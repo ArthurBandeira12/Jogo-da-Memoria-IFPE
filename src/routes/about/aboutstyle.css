@@ -67,16 +67,20 @@ header {
 
 .card-image {
     background: #D3D3D3; 
-    height: 60%; 
+    height: 200px; /* Alteração 60 % para 200% Altura fixa */
+    width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; 
 }
+
 .card-image img {
-    max-width: 100%; 
-    max-height: 100%; 
+    width: auto; 
+    height: 100%; 
     object-fit: cover; 
 }
+
 
 .card-content {
     padding: 10px;
