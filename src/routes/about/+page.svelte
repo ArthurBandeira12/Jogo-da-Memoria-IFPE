@@ -5,7 +5,7 @@
 
 
 <div id="about-page">
-    <!-- Cabeçalho com "Memory Match" no canto superior esquerdo -->
+    
     <header>
         <div id="logo">
             <span>MEMORY<br />MATCH</span>
@@ -13,13 +13,13 @@
         </div>
     </header>
 
-    <!-- Seção do time -->
+    
     <section id="team-section">
         <h2>Our Team</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </section>
 
-    <!-- Cards da equipe -->
+    
     <section id="cards-container">
         <div class="card">
             <div class="card-image"><img src="./imagemprojeto.png" alt="imagemarthur"></div>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <!-- Botão para voltar -->
+    
     <footer>
         <a href="/" id="back-button">Back to Home</a>
     </footer>
