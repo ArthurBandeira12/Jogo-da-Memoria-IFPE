@@ -1,14 +1,16 @@
 <script>
     /*variavel dos botões*/
      let themes = ["Default", "Harry Potter", "Super heroes"];
+     import"./pageplay.css"
     </script>
   
-<style src="./pageplay.css"></style>
+
   
   <main>
     <div class="container">
       <div class="title">
-        <span>MEMORY MATCH</span>
+        <span>MEMORY <br>MATCH</span>
+        
         <img src="/brain.png" alt="Brain Icon" />
       </div>
       <p class="subtitle">Select a theme:</p>
@@ -19,6 +21,11 @@
           <button class="button">{theme}</button>
         {/each}
       </div>
+    </div>
+    <div id="help-container">
+        <button class="icon-button" aria-label="Ajuda">
+            <i class="fa-regular fa-circle-question fa-3x" style="color:#ffffff;"></i>
+        </button>
     </div>
   </main>
   
