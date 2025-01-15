@@ -1,6 +1,11 @@
 <script>
   /* Importa o estilo */
   import "./pageplay.css";
+  
+  // Função para voltar à página anterior
+  function handleBack() {
+    window.history.back();
+  }
 
   // Lista de temas e suas rotas
   const themes = [
@@ -66,7 +71,12 @@
         <span class="card-name">Random Theme</span>
        </div>
      </div>
- 
+    
+       <!-- Botão voltar -->
+     <div id="back-container">
+      <button on:click={handleBack} class="back-button">← </button>
+    </div>
+     
      <!-- Botão help -->
      <div id="help-container">
       <button class="icon-button" aria-label="Ajuda">
