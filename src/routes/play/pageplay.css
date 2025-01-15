@@ -1,12 +1,12 @@
 body {
-  background-color: #000 !important; /* O !important evita bugs no carregamento do background */
+  background-color: #0D0D0D ; /* O !important evita bugs no carregamento do background */
   color: white; 
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Offside', cursive, sans-serif
 }
 
 .container {
-  background-color: #000; /* Fundo do contêiner */
+  background-color: #0D0D0D; /* Fundo do contêiner */
   min-height: 100vh; /* Garante que ocupa toda a altura da tela */
   display: flex;
   flex-direction: column;
@@ -16,31 +16,24 @@ body {
 }
 
 /* Estilo para o título e ícone */
-.header {
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  gap: 10px;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+#logo span {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #FFFFFF;
 }
 
-.title span {
-  font-size: 2.5rem;
-  color: white;
-  line-height: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.title img {
-  width: 80px;
+#logo img {
+  width: 30px; 
   height: auto;
-  margin-bottom: 10px;
 }
 
 /* Centraliza o texto "Select a theme" */
@@ -79,7 +72,7 @@ body {
 }
 
 /* Estilo das cartas */
-.card {
+.cardd {
   width: 150px;
   height: 200px;
   display: block;
@@ -92,14 +85,14 @@ body {
 }
 
 /* Imagem das cartas */
-.card img {
+.cardd img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Efeito ao passar o mouse */
-.card:hover {
+.cardd:hover:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
@@ -109,9 +102,30 @@ body {
   margin-top: 0; /* Remove possíveis deslocamentos verticais */
 }
 
-/* Botão de ajuda no canto inferior direito */
 #help-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0;  
+  right: 0;  
+  left: 0;
+  z-index: 1000; 
+}
+
+.icon-button {
+  margin: 2rem;
+  background-color: #0D0D0D;
+  border: none;  
+}
+
+.icon-button :hover {
+  transform: scale(1.05);
+
+}
+
+.icon-button :active {
+  transform: scale(0.98);
+
 }

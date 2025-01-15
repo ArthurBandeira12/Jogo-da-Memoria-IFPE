@@ -21,12 +21,13 @@
 <main>
   <div class="container">
     <!-- Título e Ícone -->
-    <div class="header">
-      <div class="title">
-        <span>MEMORY <br />MATCH</span>
-        <img src="/brain.png" alt="Brain Icon" />
+    <header>
+      <div id="logo">
+          <span>MEMORY<br />MATCH</span>
+          <img src="/brain.png" alt="Brain Icon" />
       </div>
-    </div>
+  </header>
+
 
     <!-- Texto: "Select a theme" -->
     <p class="subtitle">Select a theme:</p>
@@ -35,21 +36,21 @@
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <div class="card-container">
       <div class="card-wrapper">
-        <a href="/memorygame" class="card">
+        <a href="./memorygamedefault" class="cardd">
           <img src="/Img-teste-2.png" alt="Default Theme" class="card-image" />
         </a>
         <span class="card-name">Default</span>
       </div>
       
       <div class="card-wrapper">
-        <a href="/memorygame" class="card">
+        <a href="/memorygame" class="cardd">
           <img src="/HarryPotterIcon.jpeg" alt="Harry Potter Theme" class="card-image" />
         </a>
         <span class="card-name">Harry Potter</span>
       </div>
       
       <div class="card-wrapper">
-        <a href="/memorygame" class="card">
+        <a href="/memorygame" class="cardd">
           <img src="/Img-teste-0.png" alt="Super Heroes Theme" class="card-image" />
            </a>
         <span class="card-name">Super Heroes</span>
@@ -60,7 +61,7 @@
       <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div class="card-wrapper random" on:click={handleRandomTheme}>
        <!-- svelte-ignore a11y_missing_attribute -->
-       <a class="card">
+       <a class="cardd">
         <img src="/Img-teste-1.png" alt="Random Theme" class="card-image" />
          </a>
         <span class="card-name">Random Theme</span>
